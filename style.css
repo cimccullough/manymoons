@@ -1,0 +1,133 @@
+/* Reset values */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  color: var(--dark);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+body {
+  background-color: var(--light);
+  line-height: 1.5;
+  text-align: center;
+  text-rendering: optimizeSpeed;
+  width: 100%;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+:root {
+  --bg-colour: #04052e;
+  --light: #fff3c4;
+  --dark-text: #22007c;
+}
+
+body {
+  background-color: var(--bg-colour);
+  color: var(--light);
+  font-family: "Sono";
+}
+
+#title {
+  font-family: "Tourney";
+  font-size: 6rem;
+  font-style: italic;
+  padding: 1rem;
+}
+
+#dateSection {
+  padding: 2rem 0;
+}
+
+#selectedDate {
+  background-color: var(--light);
+  border: transparent;
+  border-radius: 50%;
+  color: var(--dark-text);
+  cursor: pointer;
+  padding: 3.5rem 0.5rem;
+}
+
+#selectedDate::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+}
+
+.button {
+  background-color: var(--light);
+  border: none;
+  border-radius: 50%;
+  color: var(--dark-text);
+  cursor: pointer;
+  padding: 2.3rem 0.5rem;
+}
+
+#moonsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 4rem;
+  gap: 1rem;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+#moonsText {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.moonEmoji {
+  animation: fadeIn 4s;
+}

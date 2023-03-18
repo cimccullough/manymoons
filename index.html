@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&family=Nunito&family=Sono&family=Tourney:ital,wght@0,100;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Many moons</title>
+  </head>
+  <body>
+    <main>
+      <h1 id="title">Many Moons</h1>
+      <section id="dateSection">
+        <input type="date" name="userAge" id="selectedDate" />
+        <button class="button" onclick="calculateMoons()">Calculate</button>
+      </section>
+      <section id="moonSection" class="hide">
+        <div id="moonsText">
+          <h1>You are <span id="numberOfMoons"></span> moons old.</h1>
+        </div>
+        <div id="moonsContainer"></div>
+      </section>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
